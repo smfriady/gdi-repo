@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@prisma/client": "^5.16.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase": "^10.12.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.1.4",
+    "prisma": "^5.16.0"
+  },
+  "scripts": {
+    "postinstall": "prisma generate",
+    "start": "npx prisma generate && node ./app.js",
+    "dev": "npx nodemon ./app.js",
+    "build": "npx prisma generate && node ./app.js"
+  },
+  "main": "app.js"
+}
